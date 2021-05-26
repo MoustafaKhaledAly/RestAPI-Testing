@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-25T13:26:39Z" name="Command line suite" finished-at="2021-05-25T13:26:44Z" duration-ms="4465">
+    <groups>
+    </groups>
+    <test started-at="2021-05-25T13:26:39Z" name="Command line test" finished-at="2021-05-25T13:26:44Z" duration-ms="4465">
+      <class name="checkSingleUserTest">
+        <test-method is-config="true" signature="createRequestSpecification()[pri:0, instance:checkSingleUserTest@42f93a98]" started-at="2021-05-25T13:26:42Z" name="createRequestSpecification" finished-at="2021-05-25T13:26:42Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createRequestSpecification -->
+        <test-method signature="getSingleUserData(java.lang.String, java.lang.String)[pri:0, instance:checkSingleUserTest@42f93a98]" started-at="2021-05-25T13:26:42Z" name="getSingleUserData" data-provider="userName" finished-at="2021-05-25T13:26:43Z" duration-ms="445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Janet]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleUserData -->
+        <test-method signature="getSingleUserData(java.lang.String, java.lang.String)[pri:0, instance:checkSingleUserTest@42f93a98]" started-at="2021-05-25T13:26:43Z" name="getSingleUserData" data-provider="userName" finished-at="2021-05-25T13:26:43Z" duration-ms="382" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Emma]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleUserData -->
+        <test-method signature="getSingleUserData(java.lang.String, java.lang.String)[pri:0, instance:checkSingleUserTest@42f93a98]" started-at="2021-05-25T13:26:43Z" name="getSingleUserData" data-provider="userName" finished-at="2021-05-25T13:26:44Z" duration-ms="381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Eve]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleUserData -->
+      </class> <!-- checkSingleUserTest -->
+      <class name="checkListUserTest">
+        <test-method is-config="true" signature="createRequestSpecification()[pri:0, instance:checkListUserTest@631330c]" started-at="2021-05-25T13:26:39Z" name="createRequestSpecification" finished-at="2021-05-25T13:26:40Z" duration-ms="828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createRequestSpecification -->
+        <test-method signature="createUser(int, java.lang.String, java.lang.String)[pri:0, instance:checkListUserTest@631330c]" started-at="2021-05-25T13:26:40Z" name="createUser" data-provider="userName" finished-at="2021-05-25T13:26:42Z" duration-ms="1967" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[George]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="createUser(int, java.lang.String, java.lang.String)[pri:0, instance:checkListUserTest@631330c]" started-at="2021-05-25T13:26:42Z" name="createUser" data-provider="userName" finished-at="2021-05-25T13:26:42Z" duration-ms="436" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Tobias]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+JSON path data[2].first_name doesn't match.
+Expected: Tobias
+  Actual: Emma
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+JSON path data[2].first_name doesn't match.
+Expected: Tobias
+  Actual: Emma
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)
+at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+at checkListUserTest.createUser(checkListUserTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+      </class> <!-- checkListUserTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

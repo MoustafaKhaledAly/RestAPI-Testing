@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="5" failures="1" name="TestSuite" time="3.616" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2021.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="16.0.1+9-24"/>
+    <property name="sun.boot.library.path" value="C:\Users\maly\.jdks\openjdk-16.0.1\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\maly\IdeaProjects\restAssuredSampleProject"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\maly\IdeaProjects\restAssuredSampleProject"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="16.0.1+9-24"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\maly\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.1\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.1\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\maly\.jdks\openjdk-16.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Users\maly\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.1\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="60.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\maly"/>
+    <property name="user.timezone" value="Africa/Cairo"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="16"/>
+    <property name="user.name" value="maly"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.1\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2021.1\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.vm.specification.version" value="16"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.1 install"/>
+    <property name="java.home" value="C:\Users\maly\.jdks\openjdk-16.0.1"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="16.0.1"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.1\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="checkListUserTest" name="createUser" time="1.97"/>
+  <testcase classname="checkListUserTest" name="createUser" time="0.441">
+    <failure message="1 expectation failed.
+JSON path data[2].first_name doesn&apos;t match.
+Expected: Tobias
+  Actual: Emma
+" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+JSON path data[2].first_name doesn&apos;t match.
+Expected: Tobias
+  Actual: Emma
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at checkListUserTest.createUser(checkListUserTest.java:44)
+</failure>
+  </testcase>
+  <testcase classname="checkSingleUserTest" name="getSingleUserData" time="0.444"/>
+  <testcase classname="checkSingleUserTest" name="getSingleUserData" time="0.38"/>
+  <testcase classname="checkSingleUserTest" name="getSingleUserData" time="0.381"/>
+</testsuite>
